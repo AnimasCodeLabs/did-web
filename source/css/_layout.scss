@@ -1,0 +1,25 @@
+.container{
+  @include outer-container;
+};
+
+.page-body{
+  @include row();
+  @include span-columns(12);
+  text-align: center;
+  @include pad(0 default default default);
+}
+
+h1.site-title{
+  font-size: 2em;
+  margin: 1em 0;
+
+  @include media($medium-screen){
+    font-size: 3em;
+  }
+}
+
+footer.site-footer{
+  color: #aaa;
+  font-size: .5em;
+  margin: 1em;
+}
